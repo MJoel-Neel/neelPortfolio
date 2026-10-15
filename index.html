@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neel Allohan — Développeur Web</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+
+<body>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav id="navbar">
+        <a href="#" class="nav-logo">Neel<span class="dot">.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#" class="nav-link">Accueil</a></li>
+            <li><a href="#propos" class="nav-link">À propos</a></li>
+            <li><a href="#parcours" class="nav-link">Parcours</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="#projets" class="nav-link">Projets</a></li>
+            <li><a href="#veille" class="nav-link">Veille</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <!-- Bouton dark/light mode -->
+            <button id="theme-toggle" aria-label="Basculer le thème">
+                <span class="icon-sun">☀</span>
+                <span style="color: #F4EDE4;" class="icon-moon">☽</span>
+            </button>
+            <!-- Burger menu mobile -->
+            <button id="burger" aria-label="Ouvrir le menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile menu overlay -->
+    <div id="mobile-menu">
+        <ul>
+            <li><a href="#" class="mob-link">Accueil</a></li>
+            <li><a href="#propos" class="mob-link">À propos</a></li>
+            <li><a href="#parcours" class="mob-link">Parcours</a></li>
+            <li><a href="#skills" class="mob-link">Compétences</a></li>
+            <li><a href="#projets" class="mob-link">Projets</a></li>
+            <li><a href="#veille" class="mob-link">Veille</a></li>
+            <li><a href="#contact" class="mob-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero">
+        <div class="hero-bg-circle"></div>
+        <div class="hero-content">
+            <div class="hero-text reveal">
+                <p class="hero-greeting">Bonjour, je suis</p>
+                <h1 class="hero-name">ALLOHAN<br><span class="name-accent">Neel</span></h1>
+                <h2 class="hero-role">Développeur <span class="role-highlight">Web Fullstack</span> &amp; Mobile</h2>
+                <p class="hero-sub">Étudiant BTS SIO SLAM · Passionné par le code, le design et les nouvelles
+                    technologies</p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn-primary">Me contacter</a>
+                    <a href="#projets" class="btn-outline">Voir mes projets</a>
+                </div>
+            </div>
+            <div class="hero-img reveal-right">
+                <div class="img-frame">
+                    <img src="./assets/image/hero.jpg" alt="Neel Allohan">
+                </div>
+                <div class="img-badge">
+                    <span class="badge-dot"></span>
+                    Disponible
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Défiler</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ===================== À PROPOS ===================== -->
+    <section id="propos">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">01 — À propos</span>
+                <h2 class="section-title">Qui suis-je ?</h2>
+            </div>
+            <div class="propos-grid">
+                <div class="propos-img-wrap reveal">
+                    <img src="./assets/image/me1.png" alt="Neel-Joel Allohan">
+                    <div class="propos-img-deco"></div>
+                </div>
+                <div class="propos-info reveal-right">
+                    <p class="propos-desc">Développeur <strong>web Fullstack</strong> en cours de BTS SIO, je combine
+                        rigueur académique et
+                        projets personnels réalisés avec React JS et Vite. Je souhaite apporter ma curiosité,
+                        mon autonomie et mes bases en JavaScript et PHP pour contribuer efficacement à une
+                        alternance en développement web.</p>
+                    <div class="info-grid">
+                        <div class="info-row"><span class="info-label">Nom</span><span class="info-val">ALLOHAN</span>
+                        </div>
+                        <div class="info-row"><span class="info-label">Prénom</span><span class="info-val">Neel
+                                MJ</span></div>
+                        <div class="info-row"><span class="info-label">Ville</span><span class="info-val">Paris,
+                                75004</span></div>
+                        <div class="info-row"><span class="info-label">Moblité</span><span class="info-val">
+                                île-de-france
+                            </span></div>
+                        <div class="info-row"><span class="info-label">Email</span><span class="info-val"><a
+                                    href="mailto:Allohanjoel1@gmail.com">Allohanjoel1@gmail.com</a></span></div>
+                        <div class="info-row"><span class="info-label">LinkedIn</span><span class="info-val"><a
+                                    href="https://linkedin.com/in/joel-allohan" target="_blank">joel-allohan</a></span>
+                        </div>
+                        <div class="info-row"><span class="info-label">GitHub</span><span class="info-val"><a
+                                    href="https://github.com/MJoel-Neel" target="_blank">MJoel-Neel</a></span></div>
+                        <div class="info-row"><span class="info-label">Téléphone</span><span class="info-val">+33 6 33
+                                57 35 57</span></div>
+                    </div>
+                    <a href="./assets/cv/neelCV.pdf" target="_blank" class="btn-primary">Voir mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PARCOURS ===================== -->
+    <section id="parcours">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">02 — Parcours</span>
+                <h2 class="section-title">Formation &amp; Expériences</h2>
+            </div>
+
+            <div class="timeline-wrap">
+                <h3 class="timeline-cat reveal">Formation</h3>
+                <div class="timeline">
+                    <div class="tl-item reveal">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <span class="tl-year">2025 — 2026</span>
+                            <h4>BTS SIO SLAM 1ère année</h4>
+                            <p>AURLOM BTS+, Paris, France</p>
+                        </div>
+                    </div>
+                    <div class="tl-item reveal">
+                        <div class="tl-dot"></div>
+                        <div class="tl-card">
+                            <span class="tl-year">2021 — 2024</span>
+                            <h4>Diplôme de Technicien en Installation et Maintenance en Informatique.</h4>
+                            <p>EPS Saint Jean Bosco, Cotonou, LI, Benin</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <h3 class="timeline-cat reveal">Expériences</h3>
+                <div class="timeline">
+                    <div class="tl-item reveal">
+                        <div class="tl-dot tl-dot-exp"></div>
+                        <div class="tl-card">
+                            <span class="tl-year">En Cours</span>
+                            <h4>Stagiaire Développement Full Stack</h4>
+                            <p>Unlock Express Paris</p>
+                            <ul class="tl-list">
+                                <li>Participation active à la conception et au déploiement de sites web
+                                    dynamiques et responsives.</li>
+                                <li>Développement et intégration de fonctionnalités interactives côté client pour
+                                    améliorer l'expérience utilisateur.</li>
+                                <li>Analyse, débogage et optimisation de projets existants pour garantir leur
+                                    stabilité et leur performance.</li>
+                                <li>Mise à jour de composants d'interface et intégration de nouvelles maquettes
+                                    graphiques</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="tl-item reveal">
+                        <div class="tl-dot tl-dot-exp"></div>
+                        <div class="tl-card">
+                            <span class="tl-year">De juin 2022 à juillet 2022</span>
+                            <h4>Stagiaire Technicien Informatique & Électronique</h4>
+                            <p>ATS, Cotonou, LI, Benin</p>
+                            <ul class="tl-list">
+                                <li>Conception et programmation de prototypes de contrôle automatisé à l'aide
+                                    de microcontrôleurs <strong>Arduino</strong>.</li>
+                                <li>Installation et configuration d'antennes paraboliques en bande KU pour la
+                                    réception de signaux satellites.</li>
+                                <li>Diagnostic de pannes matérielles et réparation de circuits via le brasage et le
+                                    remplacement de composants.</li>
+                                <li>Application de procédures de test strictes pour garantir la stabilité des
+                                    installations et des montages électroniques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cv-cta reveal">
+                <a href="./assets/cv/neelCV.pdf" download class="btn-primary">Télécharger mon CV</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== COMPÉTENCES ===================== -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">03 — Compétences</span>
+                <h2 class="section-title">Mon stack technique</h2>
+            </div>
+
+            <div class="skills-categories">
+                <div class="skill-cat reveal">
+                    <h3 class="skill-cat-title">Développement</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <!-- SQL -->
+                                <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="36" cy="36" r="34" fill="#1E293B" />
+                                    <ellipse cx="36" cy="24" rx="18" ry="8" fill="#3B82F6" />
+                                    <path d="M18 24v20c0 4 8 8 18 8s18-4 18-8V24" fill="#3B82F6" />
+                                    <text x="36" y="48" text-anchor="middle" font-family="Segoe UI, sans-serif"
+                                        font-size="14" font-weight="700" fill="white">SQL</text>
+                                </svg>
+                            </div>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <!-- JS -->
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="256" height="256" fill="#F7DF1E" />
+                                    <text x="128" y="170" text-anchor="middle" font-family="Segoe UI, sans-serif"
+                                        font-size="140" font-weight="700" fill="#000">
+                                        JS
+                                    </text>
+                                </svg>
+
+                            </div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="128" height="128" rx="16" fill="#1E293B" />
+                                    <path fill="#E44D26" d="M19 5l9 101 36 10 36-10 9-101z" />
+                                    <path fill="#F16529" d="M64 112l29-8 8-89H64z" />
+                                    <path fill="#EBEBEB" d="M64 52H45l-1-12h20V28H32l1 12 3 36h28z" />
+                                    <path fill="#FFF" d="M64 52v12h18l-2 20-16 4v13l29-8 4-41 1-12z" />
+                                </svg>
+
+                            </div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="128" height="128" rx="16" fill="#1E293B" />
+                                    <path fill="#1572B6" d="M19 5l9 101 36 10 36-10 9-101z" />
+                                    <path fill="#33A9DC" d="M64 112l29-8 8-89H64z" />
+                                    <path fill="#FFF" d="M64 52H45l-1-12h20V28H32l1 12 3 36h28z" />
+                                    <path fill="#EBEBEB" d="M64 52v12h18l-2 20-16 4v13l29-8 4-41 1-12z" />
+                                </svg>
+
+                            </div>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="128" cy="128" rx="120" ry="72" fill="#4F5B93" />
+                                    <text x="128" y="150" text-anchor="middle" font-family="Segoe UI, sans-serif"
+                                        font-size="96" font-weight="700" fill="white">
+                                        PHP
+                                    </text>
+                                </svg>
+
+                            </div>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="12" fill="#1E293B" />
+                                    <path fill="#FFFFFF"
+                                        d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.38 7.86 10.9.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.39-3.87-1.39-.53-1.33-1.3-1.69-1.3-1.69-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.1-.76.41-1.27.75-1.56-2.55-.29-5.23-1.28-5.23-5.7 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.75.81 1.2 1.84 1.2 3.1 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.08.8 2.18v3.23c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z" />
+                                </svg>
+
+                            </div>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="36" cy="36" r="34" fill="#1E293B" />
+                                    <rect x="22" y="16" width="28" height="12" rx="4" fill="#38BDF8" />
+                                    <rect x="22" y="44" width="28" height="12" rx="4" fill="#38BDF8" />
+                                    <circle cx="36" cy="36" r="6" fill="#0EA5E9" />
+                                    <line x1="36" y1="28" x2="36" y2="30" stroke="#38BDF8" stroke-width="3" />
+                                    <line x1="36" y1="42" x2="36" y2="44" stroke="#38BDF8" stroke-width="3" />
+                                </svg>
+
+                            </div>
+                            <span>Algorithmique</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" stroke="#61DAFB" stroke-width="16">
+                                        <ellipse rx="75" ry="30" transform="rotate(0 128 128)" cx="128" cy="128" />
+                                        <ellipse rx="75" ry="30" transform="rotate(60 128 128)" cx="128" cy="128" />
+                                        <ellipse rx="75" ry="30" transform="rotate(120 128 128)" cx="128" cy="128" />
+                                    </g>
+                                    <circle cx="128" cy="128" r="14" fill="#61DAFB" />
+                                </svg>
+
+                            </div>
+                            <span>REACT</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="256" height="256" rx="20" fill="#3178C6" />
+                                    <text x="128" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif"
+                                        font-size="120" font-weight="700" fill="white">
+                                        TS
+                                    </text>
+                                </svg>
+
+                            </div>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#283593" d="M128 0L16 64v128l112 64 112-64V64z" />
+                                    <path fill="#5C6BC0" d="M128 22L38 74v108l90 52 90-52V74z" />
+                                    <path fill="#FFFFFF" d="M160 160a48 48 0 1 1 0-64l24-24a80 80 0 1 0 0 112z" />
+                                </svg>
+
+                            </div>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="36" cy="36" r="34" fill="#1E293B" />
+                                    <g transform="translate(36,36)">
+                                        <circle r="6" fill="#F472B6" />
+                                        <circle r="6" cx="14" fill="#F9A8D4" />
+                                        <circle r="6" cx="-14" fill="#F9A8D4" />
+                                        <circle r="6" cy="14" fill="#F9A8D4" />
+                                        <circle r="6" cy="-14" fill="#F9A8D4" />
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>DAISY UI</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#38BDF8"
+                                        d="M128 64c-34 0-55 17-63 51 12-17 26-23 43-18 9 3 15 10 22 17 12 12 26 26 58 26 34 0 55-17 63-51-12 17-26 23-43 18-9-3-15-10-22-17-12-12-26-26-58-26z" />
+                                </svg>
+                            </div>
+                            <span>TAILWIND CSS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cat reveal">
+                    <h3 class="skill-cat-title">Outils & environnement</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <defs>
+                                        <linearGradient id="vite1" x1="0" x2="1" y1="0" y2="1">
+                                            <stop offset="0%" stop-color="#41D1FF" />
+                                            <stop offset="100%" stop-color="#BD34FE" />
+                                        </linearGradient>
+                                        <linearGradient id="vite2" x1="0" x2="1" y1="0" y2="1">
+                                            <stop offset="0%" stop-color="#FFEA83" />
+                                            <stop offset="100%" stop-color="#FFA800" />
+                                        </linearGradient>
+                                    </defs>
+                                    <path fill="url(#vite1)"
+                                        d="M255 37L134 252c-3 5-10 5-13 0L1 37c-4-7 3-15 11-13l116 31 116-31c8-2 15 6 11 13z" />
+                                    <path fill="url(#vite2)" d="M176 0L96 96l48 12L80 256l96-96-48-12z" />
+                                </svg>
+
+                            </div>
+                            <span>VITE</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="36" cy="36" r="34" fill="#1E293B" />
+                                    <rect x="26" y="20" width="20" height="28" rx="4" fill="#38BDF8" opacity="0.4" />
+                                    <rect x="26" y="28" width="20" height="20" rx="4" fill="#38BDF8" />
+                                    <path d="M36 50 L36 58" stroke="#38BDF8" stroke-width="3" stroke-linecap="round" />
+                                    <path d="M32 54 L36 58 L40 54" stroke="#38BDF8" stroke-width="3" fill="none"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <span>AOS</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="256" height="256" rx="24" fill="#1E293B" />
+                                    <path fill="#FF6A95" d="M128 32l96 48v96l-96 48-96-48V80z" />
+                                    <path fill="#FFFFFF" d="M96 96h20l24 36 24-36h20v64h-20v-32l-24 32-24-32v32H96z" />
+                                </svg>
+
+                            </div>
+                            <span>N8N</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="256" height="256" rx="24" fill="#1E293B" />
+                                    <path fill="#007ACC" d="M196 48L112 128l84 80 20-12V60z" />
+                                    <path fill="#1F9CF0" d="M60 80l52 48-52 48-20-12V92z" />
+                                    <path fill="#007ACC" d="M112 128l84 80-52-12-84-68z" />
+                                </svg>
+                            </div>
+                            <span>VSC</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="36" cy="36" r="34" fill="#1E293B" />
+                                    <ellipse cx="36" cy="22" rx="18" ry="8" fill="#3B82F6" />
+                                    <path d="M18 22v20c0 4 8 8 18 8s18-4 18-8V22" fill="#3B82F6" />
+                                    <text x="36" y="52" text-anchor="middle" font-family="Segoe UI, sans-serif"
+                                        font-size="14" font-weight="700" fill="white">SGBD</text>
+                                </svg>
+
+                            </div>
+                            <span>WAMP | XAMP | MAMP</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg width="64" height="64" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="256" height="256" rx="24" fill="#1E293B" />
+                                    <polygon points="128,48 208,208 48,208" fill="white" />
+                                </svg>
+                            </div>
+                            <span>VERCEL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-cat reveal">
+                    <h3 class="skill-cat-title">Soft skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="7" r="3" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M4 12A8 8 0 0 1 12 4M12 4L10 6" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <span>Persévérance & Autonomie</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="12" cy="12" r="2" fill="currentColor" />
+                                    <path d="M12 4C15.3 4 18 6.7 18 10C18 11.2 17.6 12.3 16.9 13.2"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M12 20C8.7 20 6 17.3 6 14C6 12.8 6.4 11.7 7.1 10.8" stroke="currentColor"
+                                        stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <span>Adaptabilité</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <circle cx="10" cy="10" r="6" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M14 14L20 20" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <circle cx="7" cy="7" r="1" fill="currentColor" />
+                                    <circle cx="13" cy="7" r="1" fill="currentColor" />
+                                    <circle cx="10" cy="13" r="1" fill="currentColor" />
+                                </svg>
+                            </div>
+                            <span>Capacité d'apprentissage & Esprit d'analyse</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="4" width="18" height="4" rx="1" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <rect x="3" y="10" width="12" height="4" rx="1" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <rect x="3" y="16" width="8" height="4" rx="1" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <span>Gestion de projet & Travail en équipe</span>
+                        </div>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="3" width="8" height="8" rx="1" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <rect x="13" y="3" width="8" height="8" rx="1" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <rect x="3" y="13" width="8" height="8" rx="1" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <rect x="13" y="13" width="8" height="8" rx="1" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                </svg>
+                            </div>
+                            <span>Rigueur et précision</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PROJETS ===================== -->
+    <section id="projets">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">04 — Projets</span>
+                <h2 class="section-title">Mes réalisations</h2>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Projet 9 -->
+                <div class="project-card reveal" data-project="8">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet9.png" alt="Luxecars V2">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web - Frontend</span>
+                        <h3>Luxecars V2</h3>
+                        <p>Luxecars V2 est une vitrine digitale haut de gamme ...</p>
+                    </div>
+                </div>
+                <!-- Projet 8 -->
+                <div class="project-card reveal" data-project="7">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet8.png" alt="Bookroom">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Fullstack</span>
+                        <h3>Bookroom</h3>
+                        <p>Développement d’une application e-commerce...</p>
+                    </div>
+                </div>
+                <!-- Projet 7 -->
+                <div class="project-card reveal" data-project="6">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet7.png" alt="todo-priority-app">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web - Frontend</span>
+                        <h3>todo-priority-app</h3>
+                        <p>Todo App avec gestion de priorités</p>
+                    </div>
+                </div>
+                <!-- Projet 6 -->
+                <div class="project-card reveal" data-project="5">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet6.png" alt="MJ Portfolio">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web - Frontend</span>
+                        <h3>MJ Portfolio</h3>
+                        <p>Portfolio – Version 2</p>
+                    </div>
+                </div>
+                <!-- Projet 5 -->
+                <div class="project-card reveal" data-project="4">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet5.png" alt="Le Jardin d'Or">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web - Frontend</span>
+                        <h3>Le Jardin d'Or</h3>
+                        <p>Le site web Le Jardin d'Or – Restaurant Gastronomique est une plateforme moderne conçue pour
+                            offrir une expérience utilisateur immersive, élégante et intuitive, en cohérence avec
+                            l’image haut de gamme du restaurant.</p>
+                    </div>
+                </div>
+                <!-- Projet 4 -->
+                <div class="project-card reveal" data-project="3">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet4.png" alt="My Portfolio">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web - Frontend</span>
+                        <h3>My Portfolio</h3>
+                        <p>Portfolio – Version 1</p>
+                    </div>
+                </div>
+                <!-- Projet 3 -->
+                <div class="project-card reveal" data-project="2">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet3.png" alt="CVIA">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">IA · Pédagogie</span>
+                        <h3>CVIA</h3>
+                        <p>Page pédagogique expliquant l'intelligence artificielle : ses bases, ses applications et ses
+                            enjeux.</p>
+                    </div>
+                </div>
+                <!-- Projet 2 -->
+                <div class="project-card reveal" data-project="1">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet2.png" alt="Life Of The Wild">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">E-commerce · Design</span>
+                        <h3>Life Of The Wild</h3>
+                        <p>Page vitrine / boutique de livres en ligne, mise en page moderne présentant des ouvrages
+                            fictifs.</p>
+                    </div>
+                </div>
+
+                <!-- Projet 1 -->
+                <div class="project-card reveal" data-project="0">
+                    <div class="project-img-wrap">
+                        <img src="./assets/image/projet/projet1.png" alt="LuxeCars">
+                        <div class="project-overlay">
+                            <span class="project-cta">Voir le projet →</span>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Web - Frontend</span>
+                        <h3>LuxeCars</h3>
+                        <p>Luxecars, une vitrine digitale spécialisée dans la commercialisation de voitures de luxe.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal projets -->
+    <div id="modal-overlay" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Fermer">&times;</button>
+            <div class="modal-img-wrap">
+                <img id="modal-img" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <span id="modal-tag" class="project-tag"></span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-desc"></p>
+                <a id="modal-link" href="#" target="_blank" class="btn-primary modal-btn">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== VEILLE TECHNO ===================== -->
+    <section id="veille">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">05 — Veille</span>
+                <h2 class="section-title">Veille technologique</h2>
+                <p class="section-sub">Je me tiens régulièrement informé des nouvelles tendances et innovations du
+                    secteur.</p>
+            </div>
+
+            <div class="veille-grid">
+
+                <div class="veille-card reveal">
+                    <div class="veille-icon">🤖</div>
+                    <h3>Intelligence Artificielle Générative</h3>
+                    <span class="veille-badge">IA</span>
+                    <p>Les LLM (Large Language Models) comme GPT-4o, Claude 3.5, Gemini Ultra transforment le
+                        développement logiciel. Copilot, Cursor et Codeium assistent désormais le code en temps réel.
+                    </p>
+                    <ul class="veille-list">
+                        <li>GPT-4o / Claude Sonnet</li>
+                        <li>GitHub Copilot</li>
+                        <li>RAG & embeddings vectoriels</li>
+                    </ul>
+                </div>
+
+                <div class="veille-card reveal">
+                    <div class="veille-icon">⚡</div>
+                    <h3>Frameworks Web Modernes</h3>
+                    <span class="veille-badge">Dev</span>
+                    <p>React 19, Next.js App Router, Astro 4 et SvelteKit dominent le front-end 2025. Côté back, Bun et
+                        Hono émergent comme alternatives ultra-rapides à Node.js.</p>
+                    <ul class="veille-list">
+                        <li>React 19 / Next.js 15</li>
+                        <li>Astro &amp; Svelte 5</li>
+                        <li>Bun runtime</li>
+                    </ul>
+                </div>
+
+                <div class="veille-card reveal">
+                    <div class="veille-icon">🦀</div>
+                    <h3>Langages Émergents</h3>
+                    <span class="veille-badge">Langages</span>
+                    <p>Rust s'impose en systèmes et WebAssembly. TypeScript devient incontournable. Go gagne du terrain
+                        côté microservices. Zig et Carbon font leur entrée sur scène.</p>
+                    <ul class="veille-list">
+                        <li>Rust &amp; WebAssembly</li>
+                        <li>TypeScript 5.x</li>
+                        <li>Go &amp; Zig</li>
+                    </ul>
+                </div>
+
+                <div class="veille-card reveal">
+                    <div class="veille-icon">☁️</div>
+                    <h3>Cloud &amp; DevOps</h3>
+                    <span class="veille-badge">Infra</span>
+                    <p>L'edge computing avec Cloudflare Workers, Vercel Edge, et Deno Deploy. Kubernetes reste roi mais
+                        Docker Compose suffit pour de nombreux projets. CI/CD via GitHub Actions.</p>
+                    <ul class="veille-list">
+                        <li>Edge Functions</li>
+                        <li>GitHub Actions</li>
+                        <li>Serverless &amp; Containers</li>
+                    </ul>
+                </div>
+
+                <div class="veille-card reveal">
+                    <div class="veille-icon">🔒</div>
+                    <h3>Cybersécurité</h3>
+                    <span class="veille-badge">Sécurité</span>
+                    <p>Zero Trust Architecture, passkeys en remplacement des mots de passe, OAuth 2.1, et les enjeux de
+                        sécurité autour des APIs d'IA sont les sujets phares de 2025.</p>
+                    <ul class="veille-list">
+                        <li>Passkeys / WebAuthn</li>
+                        <li>Zero Trust</li>
+                        <li>OWASP Top 10</li>
+                    </ul>
+                </div>
+
+                <div class="veille-card reveal">
+                    <div class="veille-icon">📱</div>
+                    <h3>Mobile &amp; Cross-Platform</h3>
+                    <span class="veille-badge">Mobile</span>
+                    <p>React Native via Expo, Flutter 3 et le nouveau Swift UI permettent des apps natives depuis une
+                        seule base de code. Les PWA restent pertinentes pour leur accessibilité.</p>
+                    <ul class="veille-list">
+                        <li>Expo / React Native</li>
+                        <li>Flutter 3</li>
+                        <li>Progressive Web Apps</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">06 — Contact</span>
+                <h2 class="section-title">Travaillons ensemble</h2>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Infos contact -->
+                <div class="contact-info reveal">
+                    <p class="contact-desc">Vous avez un projet, une question ou une opportunité ? N'hésitez pas à me
+                        contacter, je réponds sous 24h.</p>
+
+                    <div class="contact-items">
+                        <a href="mailto:Allohanjoel1@gmail.com" class="contact-item">
+                            <div class="contact-ico">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 11L20 3L16 21L11 14L3 11Z" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linejoin="round" stroke-linecap="round" />
+                                    <path d="M20 3L11 14" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-item-label">Email</span>
+                                <span class="contact-item-val">Allohanjoel1@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+33633573557" class="contact-item">
+                            <div class="contact-ico">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M6.5 3C6 3 5.5 3.2 5.1 3.6L3.3 5.4C2.5 6.2 2.4 7.5 3 8.4C5.2 11.8 8.2 14.8 11.6 17C12.5 17.6 13.8 17.5 14.6 16.7L16.4 14.9C17.2 14.1 17.4 13 16.8 12.1L15.4 10C15 9.4 14.2 9.2 13.5 9.5L12.3 10C11.9 10.2 11.4 10.1 11.1 9.8L8.2 6.9C7.9 6.6 7.8 6.1 8 5.7L8.5 4.5C8.8 3.8 8.6 3 8 2.6L6.9 2C6.8 2 6.6 2 6.5 2V3Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-item-label">Téléphone</span>
+                                <span class="contact-item-val">+33 6 33 57 35 57</span>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/joel-allohan" target="_blank" class="contact-item">
+                            <div class="contact-ico">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor"
+                                        stroke-width="1.5" />
+                                    <path d="M9 10V17M9 7V7.5" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" />
+                                    <path d="M13 17V12.5C13 11.7 13.6 11 14.5 11C15.4 11 16 11.7 16 12.5V17"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-item-label">LinkedIn</span>
+                                <span class="contact-item-val">joel-allohan</span>
+                            </div>
+                        </a>
+                        <a href="https://github.com/MJoel-Neel" target="_blank" class="contact-item">
+                            <div class="contact-ico">
+                                <svg viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M12 2C7 2 3 6 3 11C3 15 5.6 18.3 9.2 19.5 9.6 19.6 9.8 19.3 9.8 19V17.2C7.3 17.8 6.8 16.2 6.8 16.2 6.4 15.1 5.8 14.8 5.8 14.8 4.9 14.2 5.9 14.2 5.9 14.2 6.9 14.3 7.4 15.3 7.4 15.3 8.3 16.9 9.9 16.4 10.5 16.1 10.6 15.4 10.9 14.9 11.2 14.6 8.9 14.3 6.5 13.4 6.5 9.8 6.5 8.8 6.9 7.9 7.5 7.2 7.4 6.9 7.1 5.9 7.6 4.6 7.6 4.6 8.5 4.3 9.8 5.4 10.7 5.1 11.7 5 12.7 5 13.7 5 14.7 5.1 15.6 5.4 16.9 4.3 17.8 4.6 17.8 4.6 18.3 5.9 18 6.9 17.9 7.2 18.5 7.9 18.9 8.8 18.9 9.8 18.9 13.4 16.5 14.3 14.2 14.6 14.6 15 14.9 15.7 14.9 16.8V19C14.9 19.3 15.1 19.6 15.5 19.5 19.1 18.3 21.7 15 21.7 11 21.7 6 17.7 2 12.7 2H12Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <div>
+                                <span class="contact-item-label">GitHub</span>
+                                <span class="contact-item-val">MJoel-Neel</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="contact-form-wrap reveal-right">
+                    <form id="contact-form" action="send.php" method="POST" novalidate>
+
+                        <!-- Honeypot anti-spam (caché) -->
+                        <input type="text" name="website" id="honeypot" tabindex="-1" autocomplete="off"
+                            aria-hidden="true" style="display:none">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nom">Nom *</label>
+                                <input type="text" id="nom" name="nom" placeholder="Votre nom" required minlength="2"
+                                    maxlength="100">
+                                <span class="form-error" id="err-nom"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">Prénom</label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" maxlength="100">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mail">Email *</label>
+                            <input type="email" id="mail" name="mail" placeholder="votre@email.com" maxlength="100"
+                                required>
+                            <span class="form-error" id="err-mail"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="objet">Objet *</label>
+                            <input type="text" id="objet" name="objet" placeholder="Sujet de votre message" required
+                                minlength="3" maxlength="200">
+                            <span class="form-error" id="err-objet"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Décrivez votre projet ou votre demande..." required minlength="10"
+                                maxlength="2000"></textarea>
+                            <span class="form-error" id="err-message"></span>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-submit" id="submit-btn">
+                            <span class="btn-text">Envoyer le message</span>
+                            <span class="btn-loading" aria-hidden="true">Envoi...</span>
+                        </button>
+
+                        <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer">
+        <div class="footer-inner">
+            <div class="footer-top">
+                <a href="#" class="footer-logo">Neel<span class="dot">.</span></a>
+                <p class="footer-tagline">Développeur Web &amp; Informatique · Paris</p>
+            </div>
+            <nav class="footer-nav">
+                <a href="#">Accueil</a>
+                <a href="#propos">À propos</a>
+                <a href="#projets">Projets</a>
+                <a href="#veille">Veille</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/joel-allohan" target="_blank" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                        <rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M9 10V17M9 7V7.5M13 17V12.5C13 11.7 13.6 11 14.5 11C15.4 11 16 11.7 16 12.5V17"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </a>
+                <a href="https://github.com/MJoel-Neel" target="_blank" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                        <path
+                            d="M12 2C7 2 3 6 3 11C3 15 5.6 18.3 9.2 19.5 9.6 19.6 9.8 19.3 9.8 19V17.2C7.3 17.8 6.8 16.2 6.8 16.2 6.4 15.1 5.8 14.8 5.8 14.8 4.9 14.2 5.9 14.2 5.9 14.2 6.9 14.3 7.4 15.3 7.4 15.3 8.3 16.9 9.9 16.4 10.5 16.1 10.6 15.4 10.9 14.9 11.2 14.6 8.9 14.3 6.5 13.4 6.5 9.8 6.5 8.8 6.9 7.9 7.5 7.2 7.4 6.9 7.1 5.9 7.6 4.6 7.6 4.6 8.5 4.3 9.8 5.4 10.7 5.1 11.7 5 12.7 5 13.7 5 14.7 5.1 15.6 5.4 16.9 4.3 17.8 4.6 17.8 4.6 18.3 5.9 18 6.9 17.9 7.2 18.5 7.9 18.9 8.8 18.9 9.8 18.9 13.4 16.5 14.3 14.2 14.6 14.6 15 14.9 15.7 14.9 16.8V19C14.9 19.3 15.1 19.6 15.5 19.5 19.1 18.3 21.7 15 21.7 11 21.7 6 17.7 2 12.7 2H12Z"
+                            fill="currentColor" />
+                    </svg>
+                </a>
+                <a href="mailto:Allohanjoel1@gmail.com" aria-label="Email">
+                    <svg viewBox="0 0 24 24" fill="none" width="20" height="20">
+                        <rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.5" />
+                        <path d="M3 7l9 6 9-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                    </svg>
+                </a>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> ALLOHAN Neel — Tous droits réservés.</p>
+                <p class="footer-credit">Conçu &amp; développé avec ❤ par MJ</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/script.js"></script>
+
+</body>
+
+</html>

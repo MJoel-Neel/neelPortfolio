@@ -1,0 +1,18 @@
+# Dépendances générées par Composer
+/vendor/
+
+# Fichiers de configuration locaux (si tu en ajoutes plus tard)
+.env
+.env.local
+config.php 
+
+# Fichiers système (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Fichiers de log
+*.log
+
+# Dossiers d'IDE (VS Code, PhpStorm, etc.)
+.idea/
+.vscode/
